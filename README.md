@@ -1,6 +1,7 @@
 # mdt
 A police Mobile Data Terminal system designed for use on the FiveM platform and ESX framework.
 
+```
 RegisterServerEvent('gcPhone:sendMessage')
 AddEventHandler('gcPhone:sendMessage', function(phoneNumber, message)
     local _source = source
@@ -18,3 +19,4 @@ AddEventHandler('gcPhone:sendMessage', function(phoneNumber, message)
 		TriggerEvent("mdt:newCall", message, name, vector3(coords.x, coords.y, coords.z))
 	end
 end)
+```
